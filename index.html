@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nexus Tools PR — Software & Herramientas Digitales</title>
+<meta name="description" content="Nexus Tools PR: software, automatizaciones y herramientas digitales para negocios en Puerto Rico.">
+<link rel="icon" href="logo.png">
+<meta name="theme-color" content="#0b0d11">
+<style>
+:root{--bg:#0b0d11;--text:#eef3ff;--muted:#c6cede;--radius:16px;--gold:#d4af37}
+html{scroll-behavior:smooth}body{margin:0;background:
+ radial-gradient(1200px 520px at 12% 0%, rgba(58,160,255,.18), transparent 60%),
+ radial-gradient(1200px 520px at 92% 6%, rgba(212,175,55,.18), transparent 62%),
+ var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto}
+.container{max-width:1140px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:rgba(11,13,17,.7);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.1)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.brand .logo{width:44px;height:44px;border-radius:12px;background:#12151c;display:grid;place-items:center}
+.brand img{width:30px;height:30px;object-fit:contain}
+.nav a.link{padding:10px 12px;text-decoration:none;color:#e8ecf4;opacity:.9}
+.btn{display:inline-flex;gap:10px;align-items:center;border-radius:12px;padding:12px 16px;border:1px solid rgba(255,255,255,.1);background:#12151c;text-decoration:none;color:#eef3ff;font-weight:700}
+.btn.primary{background:linear-gradient(135deg,#f1d684,#b9921a 55%);color:#111}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:24px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;padding:24px 0}
+@media (max-width:920px){.hero{grid-template-columns:1fr}}
+.grid{display:grid;gap:16px}
+.grid.cols-3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.grid.cols-3{grid-template-columns:1fr}}
+.service{padding:18px;border-radius:14px;background:#0f1218;border:1px solid rgba(255,255,255,.06)}
+.service h3{margin:0 0 6px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media (max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
+.thumb{aspect-ratio:16/10;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+/* Lightbox */
+#lightbox{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:90}
+#lightbox.open{display:flex}
+#lightbox img{max-width:90vw;max-height:80vh;border-radius:12px}
+#lightbox .close{position:absolute;top:14px;right:14px}
+footer{color:#aeb6c6;padding:28px 0 40px}
+.small{font-size:12px}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Nexus Tools PR">
+      <div class="logo"><img alt="Logo Nexus Tools PR" src="logo.png"></div>
+      <span>Nexus Tools PR</span>
+    </a>
+    <nav>
+      <a class="link" href="#servicios">Servicios</a>
+      <a class="link" href="#soluciones">Soluciones</a>
+      <a class="link" href="#galeria">Galería</a>
+      <a class="link" href="#precios">Precios</a>
+      <a class="link" href="#contacto">Contacto</a>
+    </nav>
+    <!-- CTA: WhatsApp directo -->
+    <a class="btn primary" href="https://wa.me/17876643079?text=Hola%20Nexus%20Tools%20PR%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20soluciones%20digitales." target="_blank" rel="noopener">Cotizar ahora</a>
+  </div>
+</header>
+
+<main class="container" id="top">
+  <section class="hero">
+    <div class="card">
+      <h1>Impulsa tu negocio con herramientas digitales</h1>
+      <p class="small" style="color:#c6cede">Automatizaciones, integraciones, dashboards y apps a la medida.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://wa.me/17876643079?text=Hola%20Nexus%20Tools%20PR%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20soluciones%20digitales." target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn" href="#servicios">Explorar servicios</a>
+        <a class="btn" href="#soluciones">Ver ejemplos</a>
+      </div>
+    </div>
+    <aside class="card">
+      <ul>
+        <li>Automatizaciones con Sheets, Apps Script y APIs</li>
+        <li>Integraciones: WhatsApp Business, pagos y e-commerce</li>
+        <li>Dashboards con métricas en tiempo real</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section id="servicios" class="card">
+    <h2>Servicios</h2>
+    <div class="grid cols-3" style="margin-top:12px">
+      <div class="service">
+        <h3>Automatizaciones</h3>
+        <p class="small" style="color:#c6cede">Flujos inteligentes para eliminar trabajo manual.</p>
+        <div class="cta">
+          <a class="btn" href="https://wa.me/17876643079?text=Hola%2C%20quiero%20cotizar%3A%20Automatizaciones" target="_blank" rel="noopener">Cotizar</a>
+          <a class="btn" href="#soluciones">Ver ejemplos</a>
+        </div>
+      </div>
+      <div class="service">
+        <h3>Apps & Dashboards</h3>
+        <p class="small" style="color:#c6cede">Paneles KPI y apps web/móvil.</p>
+        <div class="cta">
+          <a class="btn" href="https://wa.me/17876643079?text=Hola%2C%20quiero%20cotizar%3A%20Apps%20y%20Dashboards" target="_blank" rel="noopener">Cotizar</a>
+          <a class="btn" href="#galeria">Ver galería</a>
+        </div>
+      </div>
+      <div class="service">
+        <h3>Integraciones</h3>
+        <p class="small" style="color:#c6cede">Conecta pagos, agendas, inventario y más.</p>
+        <div class="cta">
+          <a class="btn" href="https://wa.me/17876643079?text=Hola%2C%20quiero%20cotizar%3A%20Integraciones" target="_blank" rel="noopener">Cotizar</a>
+          <a class="btn" href="#precios">Ver planes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="soluciones" class="card">
+    <h2>Soluciones / Casos de uso</h2>
+    <ul>
+      <li><strong>Bots & WhatsApp:</strong> Confirmaciones de citas, recordatorios, respuestas automáticas.</li>
+      <li><strong>CRM & Ventas:</strong> Embudos, seguimiento de leads, cotizaciones PDF.</li>
+      <li><strong>Operaciones:</strong> Registro de técnicos, GPS, partes, fotos y reportes.</li>
+    </ul>
+  </section>
+
+  <section id="galeria" class="card">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <a class="thumb" href="dashboard-kpi.png" target="_blank" rel="noopener"><img src="dashboard-kpi.png" alt="Dashboard KPI — ejemplo real"></a>
+      <a class="thumb" href="bot-whatsapp.png" target="_blank" rel="noopener"><img src="bot-whatsapp.png" alt="Bot de WhatsApp — ejemplo real"></a>
+      <a class="thumb" href="app-citas.png" target="_blank" rel="noopener"><img src="app-citas.png" alt="App de Citas — ejemplo real"></a>
+    </div>
+  </section>
+
+  <section id="precios" class="card">
+    <h2>Precios orientativos</h2>
+    <ul>
+      <li><strong>Starter:</strong> $299 — 1 flujo automatización + WhatsApp — <a class="btn" href="https://wa.me/17876643079?text=Hola%2C%20quiero%20el%20Plan%20Starter" target="_blank" rel="noopener">Solicitar</a></li>
+      <li><strong>Pro:</strong> $690 — Dashboard + 2 integraciones — <a class="btn" href="https://wa.me/17876643079?text=Hola%2C%20quiero%20el%20Plan%20Pro" target="_blank" rel="noopener">Solicitar</a></li>
+      <li><strong>Enterprise:</strong> A convenir — Desarrollo a medida — <a class="btn" href="https://wa.me/17876643079?text=Hola%2C%20quiero%20el%20Plan%20Enterprise" target="_blank" rel="noopener">Solicitar</a></li>
+    </ul>
+  </section>
+
+  <section id="contacto" class="card">
+    <h2>Contacto</h2>
+    <div class="cta">
+      <a class="btn primary" href="https://wa.me/17876643079?text=Hola%20Nexus%20Tools%20PR%2C%20me%20gustar%C3%ADa%20agendar%20una%20llamada." target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn" href="mailto:oasisservicespr@icloud.com?subject=Consulta%20Nexus%20Tools%20PR&body=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener">Email</a>
+      <a class="btn" href="https://calendar.google.com/" target="_blank" rel="noopener">Calendario</a>
+    </div>
+  </section>
+</main>
+
+<footer class="container">
+  <div class="small">© <span id="y"></span> Nexus Tools PR • Todos los derechos reservados</div>
+</footer>
+
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+// (Opcional) Lightbox simple si quieres abrir imágenes en overlay. 
+// Los enlaces de la galería ya abren en nueva pestaña sin JS.
+</script>
+</body>
+</html>
